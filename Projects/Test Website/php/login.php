@@ -8,7 +8,7 @@ include_once 'header.php';
 <!--main - contains the main contents of the website-->
 <div class="container">
     <!--asking user to enter login details-->
-    <form method="post" action="includes/login.inc.php">
+    <form name = "loginForm" action="includes/login.inc.php" onsubmit="return validateForm()" form method="post">
         <table>
             <tr>
                 <td>
