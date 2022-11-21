@@ -33,3 +33,11 @@ function signup() {
 function login() {
     window.location.replace("login.php");
 }
+
+function validateForm() {
+    let x = document.forms["loginForm"]["Email"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
